@@ -81,7 +81,7 @@ author:
 publication_category:
 #    books:
 #        title: 'Books'
-    arxiv:
+    manuscripts:
         title: 'Under Review'
     conferences:
         title: 'Conference Papers'
