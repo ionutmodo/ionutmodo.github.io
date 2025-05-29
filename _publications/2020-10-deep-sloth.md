@@ -10,4 +10,4 @@ venue: 'ICLR 2021'
 paperurl: 'https://arxiv.org/pdf/2010.02432'
 ---
 
-A new adversarial attack to introduce delay the predictions of multi-exit deep neural networks.
+TBD: describe paper
