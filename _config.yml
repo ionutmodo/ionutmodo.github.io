@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Ionut Modoranu"
+title                    : "ionutmodo"
 title_separator          : "-"
 name                     : &name "Ionut Modoranu"
 description              : &description "PhD student working in optimization for AI at Institute of Science and Technology (ISTA)"
