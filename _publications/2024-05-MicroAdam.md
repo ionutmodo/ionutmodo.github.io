@@ -4,7 +4,7 @@ authors: "<b>Ionut-Vlad Modoranu</b>, Mher Safaryan, Grigory Malinovsky, Eldar K
 collection: publications
 category: conferences
 permalink: /publication/2024-NeurIPS-MicroAdam
-excerpt: 'Reduce the memory usage of Adam optimizer via sparsity and error feedback'
+excerpt: 'Reduce the memory usage of Adam optimizer via sparsity and error feedback.'
 date: 2024-05-24
 venue: 'NeurIPS 2024'
 paperurl: 'https://arxiv.org/pdf/2405.15593'
