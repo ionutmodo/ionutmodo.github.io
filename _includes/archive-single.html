@@ -31,8 +31,8 @@
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i
             class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <!-- old: post.url, which links to post.permalink -->
-        <a href="{{ base_path }}{{ post.paperurl }}" rel="permalink">{{ title }}</a>
+        <!-- old: {{ base_path }}{{ post.url }}, which links to post.permalink -->
+        <a href="{{ post.paperurl }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
 
