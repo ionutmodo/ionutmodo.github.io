@@ -6,7 +6,7 @@ category: conferences
 permalink: /publication/2021-ICLR-deep-sloth
 excerpt: 'A new adversarial attack to introduce delay in the predictions of multi-exit deep neural networks.'
 date: 2020-10-06
-venue: 'ICLR 2021'
+venue: '🔦 Spotlight @ ICLR 2021'
 paperurl: 'https://arxiv.org/pdf/2010.02432'
 ---
 
