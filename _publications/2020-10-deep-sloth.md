@@ -7,7 +7,6 @@ excerpt: 'A new adversarial attack to introduce delay in the predictions of mult
 date: 2021
 venue: 'ICLR 2021'
 paperurl: 'https://arxiv.org/pdf/2010.02432'
-citation: 
 ---
 
 A new adversarial attack to introduce delay in the predictions of multi-exit deep neural networks.
