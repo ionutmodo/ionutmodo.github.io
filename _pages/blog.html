@@ -1,13 +1,18 @@
 ---
 layout: archive
 permalink: /blog/
-title: "Blog"
+title: "ionutmodo's Blog"
 author_profile: true
-redirect_from:
-  - /wordpress/blog-posts/
+pagination:
+  enabled: true
+<!--redirect_from:-->
+<!--  - /wordpress/blog-posts/-->
 ---
 
 {% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-<p>This page is under construction.</p>
+<!--{% capture written_year %}'None'{% endcapture %}-->
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+{% include paginator.html %}
 
