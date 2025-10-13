@@ -35,9 +35,9 @@
                 </a>
             {% else %} <!-- run on /publications and /posts -->
                 {% if post.collection == 'publications' %}
-                    <a href="{{ base_path }}{{ post.paperurl }}" rel="permalink">{{ title }}</a>-->
+                    <a href="{{ post.paperurl }}" rel="permalink">{{ title }}</a>
                 {% elsif post.collection == 'posts' %}
-                    <a href="{{ base_path }}{{ post.permalink }}" rel="permalink">{{ title }}</a>-->
+                    <a href="{{ base_path }}{{ post.permalink }}" rel="permalink">{{ title }}</a>
                 {% endif %}
                 <!-- initial a-tag below: -->
 <!--                <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>-->
