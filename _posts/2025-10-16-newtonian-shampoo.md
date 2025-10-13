@@ -14,3 +14,11 @@ Shampoo optimizer was proposed in [1]
 References:
 1. 
 
+
+TODO:
+- [] Shampoo won ML-Perf competition
+- [] the best optimizer in the paper Beyond Outliers
+- [] slow because of EVD and/or Coupled-Newton
+- [] explain how we adapt Newton-Schulz for -1/p power
+- [] provide implementation
+- [] show results
