@@ -29,10 +29,12 @@
         <h2 class="archive__item-title" itemprop="headline">
             {% if post.link %}
                 <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i
-                        class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+                class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
             {% else %}
-                <!-- old: {{ base_path }}{{ post.url }}, which links to post.permalink -->
-                <a href="{{ post.paperurl }}" rel="permalink">{{ title }}</a>
+                <!-- initial a-tag below: -->
+                <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+                <!-- ionut's change for papers: -->
+                <!-- <a href="{{ post.paperurl }}" rel="permalink">{{ title }}</a> -->
             {% endif %}
         </h2>
 
@@ -45,8 +47,10 @@
                 {% elsif post.collection == 'publications' %}
                     <p>{{post.authors}}</p>
                     <p>Published in <i>{{ post.venue }}</i></p>
+                    <!-- initial p-tag below: -->
+                    <!-- <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p> -->
                 {% elsif post.date %}
-                 <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+                    <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
                 {% endif %}
 
         {% if post.excerpt and site.read_more != 'enabled' %}
@@ -74,7 +78,10 @@
         {% elsif post.paperurl and post.bibtexurl %}
             <p><a href=" {{ post.paperurl }} ">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
         {% elsif post.paperurl %}
-<!--            <p><a href=" {{ post.paperurl }} ">Read Paper</a></p>-->
+            <!-- initial p-tag: -->
+            <!-- <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>-->
+            <!-- ionut's change: commented out "Read Paper" -->
+            <!-- <p><a href=" {{ post.paperurl }} ">Read Paper</a></p> -->
         {% elsif post.slidesurl and post.bibtexurl %}
             <p><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
         {% elsif post.slidesurl %}
