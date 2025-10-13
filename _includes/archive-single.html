@@ -28,11 +28,19 @@
 
         <h2 class="archive__item-title" itemprop="headline">
             {% if post.link %}
-                <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i
-                class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-            {% else %}
+                <a href="{{ post.link }}">{{ title }}</a>
+                <a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                    <i class="fa fa-link" aria-hidden="true" title="permalink"></i>
+                    <span class="sr-only">Permalink</span>
+                </a>
+            {% else %} <!-- run on /publications and /posts -->
+                {% if post.collection == 'publications' %}
+                    <a href="{{ base_path }}{{ post.paperurl }}" rel="permalink">{{ title }}</a>-->
+                {% elsif post.collection == 'posts' %}
+                    <a href="{{ base_path }}{{ post.permalink }}" rel="permalink">{{ title }}</a>-->
+                {% endif %}
                 <!-- initial a-tag below: -->
-                <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+<!--                <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>-->
                 <!-- ionut's change for papers: -->
                 <!-- <a href="{{ post.paperurl }}" rel="permalink">{{ title }}</a> -->
             {% endif %}
