@@ -52,6 +52,7 @@ author:
     stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
     # Social media
+    artstation       : # Username
     bluesky          : # Username
     facebook         : # Username
     flickr           : # Username
@@ -69,7 +70,7 @@ author:
     steam            : # Username
     telegram         : # URL
     tumblr           : # Username
-    twitter          : # Username for X / Twitter
+    twitter          : ionutmodo
     vine             : # Username
     weibo            : # Username
     wikipedia        : # Username
@@ -136,7 +137,7 @@ facebook:
     username               :
     app_id                 :
     publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                   :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -215,6 +216,7 @@ kramdown:
 collections:
     posts:
         output: true
+        permalink: /:collection/:path/
     publications:
         output: true
         permalink: /:collection/:path/
@@ -293,9 +295,9 @@ sass:
 
 
 # Outputting
-permalink: /:year/:month/:day/:title/
-#paginate: 5 # amount of posts to show
-#paginate_path: /blog/page:num/
+permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
