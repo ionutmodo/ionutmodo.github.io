@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-Download my cv [here](https://ionutmodo.github.io/files/ionut_vlad_modoranu_cv.pdf).
-
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
